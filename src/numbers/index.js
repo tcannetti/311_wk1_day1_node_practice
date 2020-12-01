@@ -12,7 +12,13 @@ const sum = (arr) => {
 
 const comboSum = (arr, sum) => {
   // write code for numbers.comboSum
-  // arr.forEach(number => console.log(number))
+  for (let i = 0; i < arr.length; i++) {
+    for (let t = 0; t < arr.length; t++) {
+      if (arr[i] + arr[t] === sum) {
+        return true;
+      } 
+    }
+  }
 }
 
 module.exports = {
